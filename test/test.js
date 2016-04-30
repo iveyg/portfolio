@@ -1,0 +1,34 @@
+var chai = require('chai');
+
+var chaiHttp = require('chai-http');
+var server = require('../app.js');
+var should = chai.should;
+var assert = require('chai').assert;
+
+chai.use(chaiHttp);
+
+describe('Testing requests to the site', function () {
+	
+	it('should return main page for GET request to /', function () {
+		chai.request(server)
+			.get('/')
+			.end(function(err, res) {
+				res.should.have.status(200);
+				done();
+			})
+	});
+
+	it('should return 200 status', function () {
+		chai.request(server)
+			.get('/users')
+			.end(function (err, res) {
+				res.should.have.statu(200);
+				done();
+			})
+	})
+
+	it('should have ')
+
+});
+
+
