@@ -18,16 +18,23 @@ describe('Testing requests to the site', function () {
 			})
 	});
 
-	it('should return 200 status', function () {
+	it('should return 200 status /users route', function () {
 		chai.request(server)
 			.get('/users')
 			.end(function (err, res) {
-				res.should.have.statu(200);
+				res.should.have.status(200);
 				done();
 			})
 	})
 
-	it('should have ')
+	it('should return 200 status for /stack route', function () {
+		chai.request(server)
+			.get('/stack')
+			.end(function (err, res) {
+				res.should.have.status(200);
+				done();
+			})
+	});
 
 });
 

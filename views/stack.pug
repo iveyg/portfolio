@@ -1,0 +1,73 @@
+extends layout
+
+block content
+	nav(class='navbar navbar-fixed-top')
+		div(class='container')
+			ul(class='nav navbar-nav')
+				li(class='')
+					a(href='/') Home
+				li(class='active')
+					a(href='/stack') Stack & Philosophy
+				li
+					a(href='/backbone') Backbone
+				li
+					a(href='/react') React
+				li
+					a(href='/jquery') jQuery 
+				li(class='dropdown-toggle')
+					a(href='/contact') Contact
+
+				li(class='dropdown')
+					a(class='dropdown-toggle' href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+						span(class='caret') Portfolio
+					ul(class='dropdown-menu')
+						li
+							a(href='#') Another action
+						li
+							a(href='#') Action2
+						li
+							a(href='#') Action3
+
+			div(class='navbar-header')
+
+
+	section(class='container-fluid stack-section')
+		div(class='row')
+			div(class='col-md-6 col-md-offset-3')
+				h1 Technology Stacks		
+				h2 Operating system and database 
+				ul
+					li Development OS: Mac OS X 
+					li Deployment OS: Ubuntu
+					li Database: PostgerSQL and MongoDB
+				h2 Node application stack 
+				ul
+					li Language: JavaScript (CoffeeScript)
+					li App Server: Express
+					li Views: Jade(Pug) or Handlebars
+					li Tests: Mocha, Chai, Chai-http, Sinon
+					li Utility: Underscore
+					li Linting: Eslint
+				h2 Browser
+				ul 
+					li JS Framework: Backbone or React
+					li CSS Framework: Backbone
+					li CSS: SCSS notation
+					li Libs: jQuery and jQuery UI 
+					li Tools: Browserify
+				h2 Devops
+				ul
+					li Version Control: Git and GitHub
+					li Local VM: Vagrant
+					li Deployment: Webhooks 
+
+				h2 Utility
+				ul
+					li Web Server: nginx
+					li Process runner: PM2
+
+				h2 Infrastructure
+				ul
+					li Hosting: Digital Ocean
+					li DNS: NameCheap
+
