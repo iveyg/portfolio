@@ -4,19 +4,19 @@ block content
 	nav(class='navbar navbar-fixed-top')
 		div(class='container')
 			ul(class='nav navbar-nav')
-				li(class='active')
-					a(href='/') Home
 				li(class='')
+					a(href='/') Home
+				li(class='active')
 					a(href='/stack') Stack & Philosophy
-				
 				li
-					a(href='#') Backbone
+					a(href='/backbone') Backbone
 				li
-					a(href='#') React
+					a(href='/react') React
 				li
-					a(href='#') jQuery 
+					a(href='/jquery') jQuery 
 				li(class='dropdown-toggle')
-					a(href='#') Contact
+					a(href='/contact') Contact
+
 				//- li(class='dropdown')
 				//- 	a(class='dropdown-toggle' href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
 				//- 		span(class='caret') Portfolio
@@ -31,12 +31,14 @@ block content
 			div(class='navbar-header')
 
 
-	section(class='container-fluid video-section')
-		div(class='row')
-			div(class='col-md-6 col-md-offset-3 ava')
-				img(src='images/vietnamise_man.jpg')
-				h1 Ivan Ivanov
-				h2 I am a software developer from Moscow
+	section(class='container-fluid backbone-section')
 		div(class='row')
 			div(class='col-md-6 col-md-offset-3')
-				div <iframe width="560" height="315" src="https://www.youtube.com/embed/VJVvc06Xl1s" frameborder="0" allowfullscreen></iframe>
+				h1 Backbone examples		
+				ul
+					li 
+						a(href='#') Sorting Table 
+					li Deployment OS: Ubuntu
+					li Database: PostgerSQL and MongoDB
+				
+
