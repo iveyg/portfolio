@@ -11,6 +11,11 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var stack = require('./routes/stack');
 var backbone = require('./routes/backbone');
+var contact = require('./routes/contact');
+var jquery = require('./routes/jquery');
+var htmlcss = require('./routes/htmlcss');
+var react = require('./routes/react');
+
 
 var app = express();
 
@@ -30,6 +35,10 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/stack', stack);
 app.use('/backbone', backbone);
+app.use('/react', react);
+app.use('/jquery', jquery);
+app.use('/htmlcss', htmlcss);
+app.use('/contact', contact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

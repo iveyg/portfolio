@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET stack page. */
 router.get('/', function(req, res, next) {
-  res.render('backbone', {title: 'Backbone'});
+  res.render('contact', {title: 'Contact'});	
 });
 
 module.exports = router;

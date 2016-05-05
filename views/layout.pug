@@ -2,11 +2,41 @@ doctype html
 html(lang="en")
 	head
 		meta(charset='utf-8')
-		title Portfolio
+		title #{title}
 		meta(name='description' content='simple portfolio')
 		meta(name='author' content='ivg')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
-		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js") 
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") 
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
 	body
+		nav(class='navbar navbar-fixed-top')
+			div(class='container')
+				ul(class='nav nav-pills')
+					li(role = 'presentation' class='active')
+						a(href='/') Home
+					li(role = 'presentation' class='')
+						a(href='/stack') Stack & Philosophy
+					li(role = 'presentation' class='dropdown')
+						a(class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Backbone
+							span(class='caret')
+						ul(class='dropdown-menu')
+							li
+								a(href='/backbone') Link 1
+							li
+								a(href='#') Link 2	
+
+
+					li(role = 'presentation')
+						a(href='react') React
+					li(role = 'presentation')
+						a(href='jquery') jQuery 
+					li(role = 'presentation')
+						a(href='/htmlcss') HTML & CSS
+					li(role = 'presentation' class='')
+						a(href='/contact') Contact
+
+				div(class='navbar-header')
 		block content
+
+
