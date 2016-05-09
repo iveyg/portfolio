@@ -14,8 +14,13 @@ a {
 }
 
 .video-section {
-	padding-top: 50px;
+	padding-top: 80px;
 	height: 100vh;
+}
+
+.video-div iframe {
+	display: block;
+	margin: 0 auto;
 }
 
 .ava img {
