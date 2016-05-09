@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 
 describe('Testing requests to the site', function () {
 	
-	it('should return main page for GET request to /', function () {
+	it('should return GET /', function () {
 		chai.request(server)
 			.get('/')
 			.end(function(err, res) {

@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET stack page. */
 router.get('/', function(req, res, next) {
-  res.render('contact', {title: 'Contact'});	
+  res.render('contact', {
+  	title: 'Contact',
+  	selected: 'contact'
+  });	
 });
 
 module.exports = router;

@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET stack page. */
 router.get('/', function(req, res, next) {
-  res.render('stack', {title: 'Technology Stack & Philosophy'});	
+  res.render('stack', {
+  	title: 'Technology Stack & Philosophy',
+  	selected: 'stack'
+  });	
 });
 
 module.exports = router;

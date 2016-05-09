@@ -10,33 +10,36 @@ html(lang="en")
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") 
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
 	body
-		nav(class='navbar navbar-fixed-top')
+		nav(class='navbar navbar-default navbar-fixed-top my-css-navbar' role='navigation')
 			div(class='container')
-				ul(class='nav nav-pills')
-					li(role = 'presentation' class='active')
-						a(href='/') Home
-					li(role = 'presentation' class='')
-						a(href='/stack') Stack & Philosophy
-					li(role = 'presentation' class='dropdown')
-						a(class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Backbone
-							span(class='caret')
-						ul(class='dropdown-menu')
-							li
-								a(href='/backbone') Link 1
-							li
-								a(href='#') Link 2	
+				div(class='collapse navbar-collapse' id='navbar')
+					ul(class='nav nav-pills')
+						li(class=(selected == 'index' ? 'active' : '') role = 'presentation' )
+							a(href='/') Home
+						li(role = 'presentation' class=(selected == 'stack' ? 'active' : ''))
+							a(href='/stack') Stack & Philosophy
+						li(role = 'presentation' class=(selected == 'backbone' ? 'active dropdown' : 'dropdown'))
+							a(class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Backbone
+								span(class='caret')
+							ul(class='dropdown-menu')
+								li
+									a(href='/backbone') Sorting Table
+								//- li
+									//- a(href='#') Link 2	
 
 
-					li(role = 'presentation')
-						a(href='react') React
-					li(role = 'presentation')
-						a(href='jquery') jQuery 
-					li(role = 'presentation')
-						a(href='/htmlcss') HTML & CSS
-					li(role = 'presentation' class='')
-						a(href='/contact') Contact
-
-				div(class='navbar-header')
+						//- li(role = 'presentation')
+							a(href='react') React
+						//- li(role = 'presentation')
+							a(href='jquery') jQuery 
+						li(role = 'presentation' class='dropdown' class=(selected == 'htmlcss ' ? 'active dropdown' : 'dropdown'))
+							a(class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') HTML & CSS
+								span(class='caret')
+							ul(class='dropdown-menu')
+								li
+									a(href='/htmlcss/fooddelivery') Food Delivery Site
+						li(role = 'presentation' class=(selected == 'contact' ? 'active' : ''))
+							a(href='/contact') Contact + #{selected}
 		block content
 
 

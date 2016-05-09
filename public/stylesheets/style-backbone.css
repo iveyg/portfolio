@@ -1,0 +1,36 @@
+.icon-none {
+	visibility: hidden;
+}
+
+.button-reload {
+	margin: 40px 0 20px 10px;
+}
+
+#taskSorting {
+	margin: 20px;
+}
+.input-form {
+	margin: 100px 0 0 30px;
+	border: 1px solid #ccc;
+	position: fixed;
+
+
+}
+.input-form input {
+
+	display: block;
+	margin: 20px 10%;
+	width: 80%;
+
+}
+
+.input-form input:first-child {
+	
+	margin-top: 50px;
+	
+}
+
+#inputrow {
+	width: 80%;
+	margin: 10%;
+}

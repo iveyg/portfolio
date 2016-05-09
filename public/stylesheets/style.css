@@ -7,6 +7,12 @@ a {
   color: #00B7FF;
 }
 
+.my-css-navbar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
 .video-section {
 	padding-top: 50px;
 	height: 100vh;
